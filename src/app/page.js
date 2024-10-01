@@ -18,7 +18,7 @@ export default function Home() {
         <meta property="og:title" content="Amazon Sales Rank Checker" />
         <meta property="og:description" content="Check the sales rank of any Amazon product free and easily." />
         <meta property="og:type" content="website" />
-        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
+        
         
         <script type="application/ld+json">
           {`
@@ -32,6 +32,7 @@ export default function Home() {
           `}
         </script>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
       </Head>
 
       <div className="container mx-auto p-5">
