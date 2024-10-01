@@ -18,6 +18,7 @@ export default function Home() {
         <meta property="og:title" content="Amazon Sales Rank Checker" />
         <meta property="og:description" content="Check the sales rank of any Amazon product free and easily." />
         <meta property="og:type" content="website" />
+        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
         
         <script type="application/ld+json">
           {`
