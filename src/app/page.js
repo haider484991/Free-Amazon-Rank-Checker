@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Amazon Sales Rank Checker</title>
+        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
         <meta name="description" content="Check the sales rank of any Amazon product quickly and easily." />
         <meta name="keywords" content="Amazon sales rank checker, free sales rank checker, Amazon product rank, rank checker, eCommerce, product visibility" />
         <meta name="author" content="HA484991" />
@@ -32,7 +33,7 @@ export default function Home() {
           `}
         </script>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
+      
       </Head>
 
       <div className="container mx-auto p-5">
