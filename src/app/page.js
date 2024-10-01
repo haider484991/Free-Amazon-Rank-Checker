@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Amazon Sales Rank Checker</title>
-        <meta name="google-site-verification" content="SD5O9YMVjMidX_2nXukZqSKJyRO3ChLAZhedDjYYNBc" />
+        
         <meta name="description" content="Check the sales rank of any Amazon product quickly and easily." />
         <meta name="keywords" content="Amazon sales rank checker, free sales rank checker, Amazon product rank, rank checker, eCommerce, product visibility" />
         <meta name="author" content="HA484991" />
