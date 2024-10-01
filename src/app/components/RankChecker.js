@@ -17,9 +17,12 @@ const RankChecker = () => {
     setIsLoading(true);
     setProgress(0); // Reset progress
 
+    // Define the interval variable outside the try block
+    let interval;
+
     try {
       // Simulating a delay for progress (can be adjusted)
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         setProgress((prev) => {
           if (prev < 90) return prev + 10; // Increase progress
           return prev;
@@ -28,15 +31,15 @@ const RankChecker = () => {
 
       const response = await axios.post("/api/rank", { url });
 
-      // Update progress to 100% once data is received
+      // Update sales rank and progress once data is received
       setSalesRank(response.data.salesRank);
       setProgress(100);
-      
-      clearInterval(interval); // Clear the interval after completion
     } catch (err) {
       setError("Error fetching sales rank. Please try again.");
-      clearInterval(interval); // Clear the interval on error
+      // Clear the interval on error
     } finally {
+      // Clear the interval to avoid memory leaks and stop progress updates
+      clearInterval(interval);
       setIsLoading(false);
     }
   };
@@ -44,7 +47,7 @@ const RankChecker = () => {
   return (
     <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md">
       <h1 className="text-2xl font-bold text-center">Amazon Sales Rank Checker</h1>
- 
+
       <form onSubmit={handleSubmit} className="mt-4">
         <input
           type="text"
@@ -74,7 +77,7 @@ const RankChecker = () => {
       )}
       {salesRank && (
         <p className="mt-4 text-lg text-blue-600">
-        {salesRank}
+          {salesRank}
         </p>
       )}
       {error && <p className="mt-4 text-lg text-red-600">{error}</p>}
