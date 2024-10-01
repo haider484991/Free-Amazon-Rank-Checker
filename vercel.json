@@ -1,0 +1,9 @@
+{
+    "functions": {
+      "src/app/api/rank/route.js": {
+        "maxDuration": 10,
+        "memory": 3008
+      }
+    }
+  }
+  
