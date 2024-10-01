@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Amazon Sales Rank Checker",
     description: "Check the sales rank of any Amazon product quickly and easily.",
-    url: "https://www.yourwebsite.com",
+    
     siteName: "Amazon Sales Rank Checker",
     type: "website",
   },
